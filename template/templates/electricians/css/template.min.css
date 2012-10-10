@@ -490,7 +490,7 @@ body {
     min-height: 440px; }
 
 #content {
-  padding: 0 0 20px 0;
+  padding: 0 0 30px 0;
   background-color: #191919; }
 
 .home .item-page {
@@ -505,7 +505,7 @@ body {
   font-size: 10px;
   text-align: center;
   color: #979797;
-  padding: 28px 0;
+  padding: 25px 0;
   background: #191919 url("../images/bg_footer-repeat.png") top center repeat-x;
   min-height: 140px; }
   #footer a {
@@ -541,7 +541,7 @@ body {
 
 .primary-menu {
   width: 960px;
-  padding: 13px 10px 0;
+  padding: 14px 10px 0;
   margin: 0 auto;
   font-size: 12px; }
   .primary-menu a, .primary-menu span {
@@ -554,10 +554,11 @@ body {
     max-width: 135px;
     word-wrap: break-word;
     vertical-align: top;
-    height: 38px; }
+    height: 37px; }
     .primary-menu .menu > li > a,
     .primary-menu .menu > li > span {
-      color: white; }
+      color: white;
+      line-height: 1em; }
       .primary-menu .menu > li > a:hover,
       .primary-menu .menu > li > span:hover {
         color: #56bef2;
@@ -573,10 +574,11 @@ body {
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
     min-width: 150px;
-    top: 37px;
+    top: 36px;
     border: 1px solid #ffffff;
     border: 1px solid rgba(255, 255, 255, 0.42);
-    box-shadow: 0px 5px 12px -3px black; }
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.6);
+    border-top: 0; }
     .primary-menu ul ul li {
       line-height: 32px;
       border-top: 1px solid #17212f; }
@@ -603,6 +605,8 @@ body {
       .primary-menu ul ul li.last {
         border-bottom-right-radius: 5px;
         border-bottom-left-radius: 5px; }
+        .primary-menu ul ul li.last:hover {
+          line-height: 32px; }
         .primary-menu ul ul li.last a:hover {
           border-bottom: 0; }
     .primary-menu ul ul a {
@@ -655,4 +659,16 @@ body {
   border-radius: 5px;
   border: 1px solid #ffffff;
   border: 1px solid rgba(255, 255, 255, 0.42);
-  box-shadow: 0px 5px 12px -3px black; }
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.6); }
+
+.read-more {
+  float: right;
+  background: #191919 url("../images/arrow.png") right center no-repeat;
+  padding: 9px 28px 10px 0;
+  margin: 0;
+  font-family: Copperplate Gothic Light;
+  font-size: 16px;
+  color: #56bef2;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
