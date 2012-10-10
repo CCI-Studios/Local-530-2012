@@ -30,5 +30,21 @@ body {
 	> div {
 		background: url('../images/bg_menu.jpg') top center no-repeat;
 		height: 49px;
+#footer {
+	font-family: Copperplate Gothic Light;
+	font-size: 10px;
+	text-align: center;
+	color: $grey;
+	padding: 28px 0;
+	background: #191919 url('../images/bg_footer-repeat.png') top center repeat-x;
+	min-height: 140px;
+
+	a {
+		color: $grey;
+
+		&:hover {
+			color: $blue;
+			text-decoration: none;
+		}
 	}
 }
