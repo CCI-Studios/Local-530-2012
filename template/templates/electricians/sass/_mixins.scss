@@ -14,3 +14,7 @@
 	-ms-transition: $settings;
 	transition: $settings;
 }
+
+@mixin divider {
+	background: url('../images/divider.png') bottom center repeat-x;
+}
