@@ -110,6 +110,17 @@
 	}
 }
 
+.secondary-menu {
+	padding-bottom: 23px;
+	margin-bottom: 15px;
+
+	@include divider;
+
+	ul ul {
+		display: none;
+	}
+}
+
 // @group vmenu
 .vmenu {
 
