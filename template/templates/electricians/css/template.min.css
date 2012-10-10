@@ -366,8 +366,7 @@ table {
 
 /* elements */
 body, select, input, textarea {
-  color: #444;
-  /* off black */
+  color: #ffffff;
   font-family: "myriad-pro", Helvetica, Arial, sans-serif;
   font-size: 15px; }
 
@@ -385,13 +384,19 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   color: #56bef2;
   margin: 0;
-  padding: 1em 0; }
+  padding: .76em 0; }
+
+.item-page h1 {
+  background: url("../images/divider.png") bottom center repeat-x; }
+  .item-page h1:first-child {
+    font-size: 18px; }
 
 h1 {
-  font-size: 18px; }
+  font-size: 24px; }
 
 h2 {
-  font-size: 15px; }
+  font-size: 15px;
+  padding-top: 1.3em; }
 
 h3 {
   font-size: 1.6em; }
@@ -457,15 +462,24 @@ button {
   overflow: visible; }
 
 body {
-  background-color: #191919; }
+  background-color: #1e2835; }
 
 .container {
   width: 960px;
   padding: 0 10px;
   margin: 0 auto; }
+  #content .container {
+    position: relative; }
 
 #wrapper {
   min-width: 960px; }
+
+#menu {
+  background: url("../images/bg_menu-repeat.jpg") top center repeat-x;
+  border-bottom: 1px solid #546981; }
+  #menu > div {
+    background: url("../images/bg_menu.jpg") top center no-repeat;
+    height: 49px; }
 
 #header {
   background: #191919 url("../images/bg_inner.jpg") top center no-repeat;
@@ -475,68 +489,97 @@ body {
     background: #191919 url("../images/bg_home.jpg") top center no-repeat;
     min-height: 440px; }
 
-#menu {
-  background: url("../images/bg_menu-repeat.jpg") top center repeat-x;
-  border-bottom: 1px solid #546981; }
-  #menu > div {
-    background: url("../images/bg_menu.jpg") top center no-repeat;
-    height: 49px; }
+#content {
+  padding: 0 0 20px 0;
+  background-color: #191919; }
 
-.hmenu .menu {
-  margin: 0;
-  padding: 0; }
-.hmenu .menu > li {
-  display: inline-block;
-  *display: inline;
-  *zoom: 1;
-  position: relative;
-  padding: 0 5px; }
-.hmenu .menu > li > a,
-.hmenu .menu > li > span {
-  display: block; }
-.hmenu ul ul {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  margin: 0;
-  padding: 0; }
-  .hmenu ul ul li {
-    white-space: nowrap; }
+.home .item-page {
+  margin-left: 245px; }
+  .home .item-page img {
+    position: absolute;
+    left: 10px;
+    top: 15px; }
+
+#footer {
+  font-family: Copperplate Gothic Light;
+  font-size: 10px;
+  text-align: center;
+  color: #979797;
+  padding: 28px 0;
+  background: #191919 url("../images/bg_footer-repeat.png") top center repeat-x;
+  min-height: 140px; }
+  #footer a {
+    color: #979797; }
+    #footer a:hover {
+      color: #56bef2;
+      text-decoration: none; }
+
+.hmenu {
+  font-family: Copperplate Gothic Light;
+  text-align: center; }
+  .hmenu .menu {
+    margin: 0;
+    padding: 0; }
+  .hmenu .menu > li {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    position: relative;
+    padding: 0 5px; }
+  .hmenu .menu > li > a,
+  .hmenu .menu > li > span {
+    display: block; }
+  .hmenu ul ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    .hmenu ul ul li {
+      white-space: nowrap; }
 
 .primary-menu {
   width: 960px;
-  padding: 0 10px;
+  padding: 13px 10px 0;
   margin: 0 auto;
-  font-family: Copperplate Gothic Light;
-  font-size: 13px;
-  line-height: 49px; }
+  font-size: 12px; }
   .primary-menu a, .primary-menu span {
     color: white; }
     .primary-menu a:hover, .primary-menu span:hover {
       color: #56bef2;
       text-decoration: none; }
-  .primary-menu .menu > li > a,
-  .primary-menu .menu > li > span {
-    color: white; }
-    .primary-menu .menu > li > a:hover,
-    .primary-menu .menu > li > span:hover {
-      color: #56bef2;
-      text-decoration: none; }
-  .primary-menu .menu > li:hover ul {
-    display: block; }
+  .primary-menu .menu > li {
+    padding: 0 12px;
+    max-width: 135px;
+    word-wrap: break-word;
+    vertical-align: top;
+    height: 38px; }
+    .primary-menu .menu > li > a,
+    .primary-menu .menu > li > span {
+      color: white; }
+      .primary-menu .menu > li > a:hover,
+      .primary-menu .menu > li > span:hover {
+        color: #56bef2;
+        text-decoration: none; }
+    .primary-menu .menu > li:hover {
+      background: url("../images/rollover_menu.png") bottom center no-repeat;
+      overflow-x: visible; }
+      .primary-menu .menu > li:hover ul {
+        display: block; }
   .primary-menu ul ul {
     display: none;
     background: #000;
-    border: 1px solid #ffffff;
-    border: 1px solid rgba(255, 255, 255, 0.42);
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
-    text-align: center;
     min-width: 150px;
+    top: 37px;
+    border: 1px solid #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.42);
     box-shadow: 0px 5px 12px -3px black; }
     .primary-menu ul ul li {
       line-height: 32px;
-      padding: 0 4px; }
+      border-top: 1px solid #17212f; }
       .primary-menu ul ul li:hover {
         background-color: #56bef2;
         /* Old browsers */
@@ -551,14 +594,29 @@ body {
         background-image: -ms-linear-gradient(top, #56bef2 0%, #3386b6 100%);
         /* IE10+ */
         background-image: linear-gradient(to bottom, #56bef2 0%, #3386b6 100%);
-        /* W3C */ }
+        /* W3C */
+        line-height: 31px; }
+        .primary-menu ul ul li:hover a {
+          border-bottom: 1px solid #1c4b65; }
+      .primary-menu ul ul li:first-child {
+        border-top: 0; }
       .primary-menu ul ul li.last {
         border-bottom-right-radius: 5px;
         border-bottom-left-radius: 5px; }
+        .primary-menu ul ul li.last a:hover {
+          border-bottom: 0; }
     .primary-menu ul ul a {
-      display: block; }
+      display: block;
+      padding: 0 4px; }
       .primary-menu ul ul a:hover {
         color: #ffffff; }
+
+.secondary-menu {
+  padding-bottom: 23px;
+  margin-bottom: 15px;
+  background: url("../images/divider.png") bottom center repeat-x; }
+  .secondary-menu ul ul {
+    display: none; }
 
 .vmenu .menu {
   margin: 0;
@@ -592,3 +650,9 @@ body {
   background: #56bef2;
   color: #fff;
   text-shadow: none; }
+
+.rounded-border {
+  border-radius: 5px;
+  border: 1px solid #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.42);
+  box-shadow: 0px 5px 12px -3px black; }
