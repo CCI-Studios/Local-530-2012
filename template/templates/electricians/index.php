@@ -80,13 +80,14 @@ $typekit = 'uhf4tzd';
 		<div id="content"><div class="container">
 			<jdoc:include type="message" />
 			<jdoc:include type="component" />
+			<div class="clear"></div>
 		</div></div>
 
 		<div id="footer"><div class="container">
 			<jdoc:include type="modules" name="footer" style="rounded" />
-			<div id="copyright">
-				<p>Site by <a href="http://ccistudios.com" target="_blank">CCI Studios</a><br/>
-				Copyright &copy; <?php echo date('Y') ?></p>
+			<div>
+				<p>&copy; Sarnia Electricians Union 530 <?php echo date('Y') ?>. All Rights Reserved.<br/>
+					Site by <a href="http://ccistudios.com" target="_blank">CCI Studios</a></p>
 			</div>
 		</div></div>
 
