@@ -25,6 +25,7 @@
 
 	<positions>
 		<position>debug</position>
+		<position>menu</position>
 		<position>header</position>
 		<position>footer</position>
 	</positions>
