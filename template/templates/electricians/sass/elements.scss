@@ -28,10 +28,10 @@ h5 { font-size: 1.2em; }
 h6 { font-size: 1.0em; }
 
 a, a:active, a:visited {
-	color: red;
+	color: $blue;
 	text-decoration: none;
+	@include transition(color .3s ease-in);
 }
 a:hover {
-	color: teal;
 	text-decoration: underline;
 }
