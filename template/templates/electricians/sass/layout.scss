@@ -16,6 +16,16 @@ body {
 	min-width: 960px;
 }
 
+#menu {
+	background: url('../images/bg_menu-repeat.jpg') top center repeat-x;
+	border-bottom: 1px solid #546981;
+
+	> div {
+		background: url('../images/bg_menu.jpg') top center no-repeat;
+		height: 49px;
+	}
+}
+
 #header {
 	background: #191919 url('../images/bg_inner.jpg') top center no-repeat;
 	min-height: 340px;
