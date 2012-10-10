@@ -1,5 +1,7 @@
 // @group hmenu
 .hmenu {
+	font-family: Copperplate Gothic Light;
+	text-align: center;
 
 	.menu {
 		margin: 0;
@@ -30,6 +32,7 @@
 		left: 0;
 		margin: 0;
 		padding: 0;
+		list-style: none;
 
 		li {
 			white-space: nowrap;
@@ -39,11 +42,9 @@
 
 .primary-menu {
 	width: 960px;
-	padding: 0 10px;
+	padding: 13px 10px 0;
 	margin: 0 auto;
-	font-family: Copperplate Gothic Light;
-	font-size: 13px;
-	line-height: 49px;
+	font-size: 12px;
 
 	a, span {
 		color: white;
@@ -54,6 +55,11 @@
 	}
 
 	.menu > li {
+		padding: 0 12px;
+		max-width: 135px;
+		word-wrap: break-word;
+		vertical-align: top;
+		height: 38px;
 
 	 	> a, 
 	 	> span {
@@ -65,25 +71,28 @@
 			}
 		}
 
-		&:hover ul {
-			display: block;
+		&:hover {
+			background: url('../images/rollover_menu.png') bottom center no-repeat;
+			overflow-x: visible;
+
+			ul {
+				display: block;
+			}
 		}
 	}
 
 	ul ul {
 		display: none;
 		background: #000;
-		border: 1px solid #ffffff;
-		border: 1px solid rgba(#ffffff, .42);
 		border-bottom-right-radius: 5px;
 		border-bottom-left-radius: 5px;
-		text-align: center;
 		min-width: 150px;
-		box-shadow: 0px 5px 12px -3px black;
+		top: 37px;
+		@include border;
 
 		li {
 			line-height: 32px;
-			padding: 0 4px;
+			border-top: 1px solid #17212f;
 
 			&:hover {
 				background-color: #56bef2; /* Old browsers */
@@ -93,16 +102,30 @@
 				background-image: -o-linear-gradient(top, #56bef2 0%,#3386b6 100%); /* Opera 11.10+ */
 				background-image: -ms-linear-gradient(top, #56bef2 0%,#3386b6 100%); /* IE10+ */
 				background-image: linear-gradient(to bottom, #56bef2 0%,#3386b6 100%); /* W3C */
+				line-height: 31px;
+
+				a {
+					border-bottom: 1px solid #1c4b65;
+				}
+			}
+
+			&:first-child {
+				border-top: 0;
 			}
 
 			&.last {
 				border-bottom-right-radius: 5px;
 				border-bottom-left-radius: 5px;
+
+				& a:hover {
+					border-bottom: 0;
+				}
 			}
 		}
 
 		a {
 			display: block;
+			padding: 0 4px;
 			&:hover {
 				color: #ffffff;
 			}
