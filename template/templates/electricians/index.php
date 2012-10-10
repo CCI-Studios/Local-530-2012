@@ -69,10 +69,12 @@ $typekit = 'uhf4tzd';
 	<div id="wrapper">
 		<div id="menu"><div>
 			<jdoc:include type="modules" name="menu" style="rounded" />
+			<div class="clear"></div>
 		</div></div>
-		
+
 		<div id="header"><div class="container">
 			<jdoc:include type="modules" name="header" style="rounded" />
+			<div class="clear"></div>
 		</div></div>
 
 		<div id="content"><div class="container">
@@ -81,7 +83,7 @@ $typekit = 'uhf4tzd';
 		</div></div>
 
 		<div id="footer"><div class="container">
-			<jdoc:include type="modules" name="header" style="rounded" />
+			<jdoc:include type="modules" name="footer" style="rounded" />
 			<div id="copyright">
 				<p>Site by <a href="http://ccistudios.com" target="_blank">CCI Studios</a><br/>
 				Copyright &copy; <?php echo date('Y') ?></p>
