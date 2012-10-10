@@ -11,3 +11,8 @@
 /* TODO Update selection BG color */
 ::-moz-selection{ background: $blue; color:#fff; text-shadow: none; }
 ::selection { background: $blue; color:#fff; text-shadow: none; }
+
+.rounded-border {
+	border-radius: 5px;
+	@include border;
+}
