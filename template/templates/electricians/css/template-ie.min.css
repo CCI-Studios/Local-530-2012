@@ -673,3 +673,9 @@ body {
   display: inline-block;
   *display: inline;
   *zoom: 1; }
+
+body {
+  background-color: #1e2835; }
+
+.color-blue {
+  color: #56bef2; }
