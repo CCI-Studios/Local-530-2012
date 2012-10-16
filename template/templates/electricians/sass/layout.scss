@@ -28,12 +28,12 @@ body {
 
 #header {
 	background: #191919 url('../images/bg_inner.jpg') top center no-repeat;
-	min-height: 340px;
+	height: 340px;
 	padding-top: 1px;
 
 	.home & {
 		background: #191919 url('../images/bg_home.jpg') top center no-repeat;
-		min-height: 440px;
+		height: 440px;
 	}
 }
 
