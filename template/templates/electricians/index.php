@@ -107,6 +107,7 @@ $typekit = 'uhf4tzd';
 		<script src="/templates/<?= $this->template ?>/js/html5.js"></script>
 		<script src="/templates/<?= $this->template ?>/js/lettering.js"></script>
 		<script src="/templates/<?= $this->template ?>/js/rollover.js"></script>
+		<script src="/templates/<?= $this->template ?>/js/clear.js"></script>
 	<?php else: ?>
 		<?php if ($analytics): ?>
 			<script>
