@@ -200,6 +200,6 @@ if ($this->tmpl['detailwindow'] == 6) {
 	</script><?php
 }
 
-echo '<div>&nbsp;</div>';
+//echo '<div>&nbsp;</div>';
 echo $this->tmpl['dsf'];
 ?>
