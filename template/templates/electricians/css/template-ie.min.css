@@ -707,5 +707,5 @@ body {
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.6);
     border-radius: 5px;
     overflow: hidden; }
-  .gallery-block:nth-child(3n+1) {
+  .gallery-block:nth-child(4n+1) {
     clear: both; }
