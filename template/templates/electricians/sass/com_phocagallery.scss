@@ -2,7 +2,8 @@
 	float: left;
 	text-align: center;
 	border: 0;
-	margin: 0 12px 30px;
+	margin: 0 0 30px 32px;
+	padding: 0;
 	background: none;
 	overflow: hidden;
 	position: relative;
@@ -38,6 +39,15 @@
 	}
 }
 
-#phocagallery + div {
-	display: none;
+#phocagallery {
+
+	.pg-cats-cv,
+	form,
+	.gallery-container {
+		margin: 0 0 0 -30px;
+	}
+
+	+ div {
+		display: none;
+	}
 }

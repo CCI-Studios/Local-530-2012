@@ -386,9 +386,13 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: .76em 0 0; }
 
-.item-page h1:first-child {
+.item-page h1:first-child,
+#phocagallery h1 {
   background: url("../images/divider.png") bottom center repeat-x;
   padding-bottom: .76em; }
+
+#phocagallery h1 {
+  margin-bottom: 15px; }
 
 h1 {
   font-size: 24px; }
@@ -681,7 +685,8 @@ body {
   float: left;
   text-align: center;
   border: 0;
-  margin: 0 12px 30px;
+  margin: 0 0 30px 32px;
+  padding: 0;
   background: none;
   overflow: hidden;
   position: relative;
@@ -704,5 +709,9 @@ body {
   .gallery-block:nth-child(4n+1) {
     clear: both; }
 
+#phocagallery .pg-cats-cv,
+#phocagallery form,
+#phocagallery .gallery-container {
+  margin: 0 0 0 -30px; }
 #phocagallery + div {
   display: none; }
