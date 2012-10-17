@@ -33,16 +33,11 @@
 		display: none;
 	}
 
-	.pg-category-view &,
-	.pg-categories-view & {
-		> div > div:first-child {
-			@include border;
-			border-radius: 5px;
-			overflow: hidden;
-		}
-	}
-
 	&:nth-child(4n+1) {
 		clear: both;
 	}
+}
+
+#phocagallery + div {
+	display: none;
 }
