@@ -387,9 +387,12 @@ h1, h2, h3, h4, h5, h6 {
   padding: .76em 0 0; }
 
 .item-page h1:first-child,
-#phocagallery h1 {
+#phocagallery h1,
+h1 span.subheading-category {
   background: url("../images/divider.png") bottom center repeat-x;
-  padding-bottom: .76em; }
+  padding-bottom: .76em;
+  margin-bottom: 15px;
+  display: block; }
 
 #phocagallery h1 {
   margin-bottom: 15px; }
@@ -495,7 +498,9 @@ body {
 
 #content {
   padding: 0 0 30px 0;
-  background-color: #191919; }
+  background: #191919 url("../images/bg_content-inner.jpg") top center no-repeat; }
+  .home #content {
+    background: #191919 url("../images/bg_content-home.jpg") top center no-repeat; }
 
 #footer {
   font-family: Copperplate Gothic Light;
@@ -680,6 +685,32 @@ body {
 
 .color-blue {
   color: #56bef2; }
+
+.cat-items tr {
+  margin-bottom: 1em;
+  line-height: 1em;
+  display: block; }
+
+div.pagination {
+  text-align: center; }
+  div.pagination ul {
+    padding-left: 0; }
+  div.pagination li {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    width: 28px;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 2px;
+    margin: 0 2px 2px;
+    padding-left: 1px;
+    background-color: #1e2835;
+    box-shadow: inset 1px 1px 1px #0c0f14; }
+    div.pagination li.pagination-start, div.pagination li.pagination-prev, div.pagination li.pagination-next, div.pagination li.pagination-end {
+      width: 42px; }
+    div.pagination li a {
+      display: block; }
 
 .gallery-block {
   float: left;
