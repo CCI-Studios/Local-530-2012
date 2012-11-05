@@ -1,0 +1,41 @@
+.cat-items {
+
+	tr {
+		margin-bottom: 1em;
+		line-height: 1em;
+		display: block;
+	}
+}
+
+div.pagination {
+	text-align: center;
+
+	ul {
+		padding-left: 0;
+	}
+
+	li {
+		display: inline-block;
+		*display: inline;
+		*zoom: 1;
+		width: 28px;
+		height: 32px;
+		line-height: 32px;
+		border-radius: 2px;
+		margin: 0 2px 2px;
+		padding-left: 1px;
+		background-color: $dark-blue;
+		box-shadow: inset 1px 1px 1px darken($dark-blue, 10%);
+
+		&.pagination-start,
+		&.pagination-prev,
+		&.pagination-next,
+		&.pagination-end {
+			width: 42px;
+		}
+
+		a {
+			display: block;
+		}
+	}
+}
