@@ -25,9 +25,12 @@ h1, h2, h3, h4, h5, h6 {
 	padding: .76em 0 0;
 }
 .item-page h1:first-child,
-#phocagallery h1 {
+#phocagallery h1,
+h1 span.subheading-category {
 	@include divider;
 	padding-bottom: .76em;
+	margin-bottom: 15px;
+	display: block;
 }
 
 #phocagallery h1 {
