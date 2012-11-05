@@ -39,7 +39,11 @@ body {
 
 #content {
 	padding: 0 0 30px 0;
-	background-color: #191919;
+	background: #191919 url('../images/bg_content-inner.jpg') top center no-repeat;
+
+	.home & {
+		background: #191919 url('../images/bg_content-home.jpg') top center no-repeat;
+	}
 }
 
 #footer {
