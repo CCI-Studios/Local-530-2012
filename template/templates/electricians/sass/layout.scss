@@ -64,3 +64,28 @@ body {
 		}
 	}
 }
+
+//error messages
+#system-message {
+	margin: 0;
+
+	dt, dd {
+		margin: 0;
+	}
+
+	dt {
+		font-size: 20px;
+		font-family: Copperplate Gothic Bold, Helvetica, Arial, sans-serif;
+		color: $blue;
+		text-transform: uppercase;
+	}
+
+	ul {
+		padding: 0;
+		margin-bottom: 0;
+
+		li {
+			list-style: none;
+		}
+	}
+}
