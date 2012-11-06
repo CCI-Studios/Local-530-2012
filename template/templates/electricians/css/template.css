@@ -388,7 +388,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .item-page h1:first-child,
 #phocagallery h1,
-h1 span.subheading-category {
+h1 span.subheading-category,
+.login h1:first-child,
+.profile h1:first-child,
+.logout h1:first-child,
+.reset h1:first-child,
+.remind h1:first-child,
+.reset-complete h1:first-child,
+.reset-confirm h1:first-child {
   background: url("../images/divider.png") bottom center repeat-x;
   padding-bottom: .76em;
   margin-bottom: 15px;
@@ -418,7 +425,7 @@ h6 {
   font-size: 1.0em; }
 
 a, a:active, a:visited, .primary-menu span {
-  color: #56bef2;
+  color: #9dd9f7;
   text-decoration: none;
   -webkit-transition: color 0.3s ease-in;
   -moz-transition: color 0.3s ease-in;
@@ -427,6 +434,7 @@ a, a:active, a:visited, .primary-menu span {
   transition: color 0.3s ease-in; }
 
 a:hover {
+  color: #56bef2;
   text-decoration: underline; }
 
 /* forms */
@@ -467,6 +475,118 @@ input:invalid, textarea:invalid {
 button {
   width: auto;
   overflow: visible; }
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0; }
+
+label {
+  min-width: 120px;
+  padding-top: 5px;
+  text-align: right;
+  margin-bottom: 5px;
+  display: block; }
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  color: #1e2835;
+  height: 28px;
+  margin: 4px 6px 20px;
+  padding-left: 5px;
+  line-height: 20px;
+  border-radius: 4px;
+  width: 206px;
+  border: 1px solid #CCC;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
+
+input[type="checkbox"].inputbox {
+  float: left;
+  margin: 9px 10px 5px 130px; }
+
+.login-fields > * {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
+.login-fields #remember-lbl {
+  text-align: left;
+  margin-bottom: 15px;
+  width: auto; }
+
+form.form-validate dt, form.form-validate dd {
+  float: left;
+  margin: 0; }
+form.form-validate dt {
+  clear: both; }
+form.form-validate button {
+  margin-left: 126px; }
+
+button {
+  margin-left: 130px;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  padding: 4px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 20px;
+  *line-height: 20px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  color: #333333;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  background-color: #f5f5f5;
+  background-image: -moz-linear-gradient(top, white, #e6e6e6);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#e6e6e6));
+  background-image: -webkit-linear-gradient(top, white, #e6e6e6);
+  background-image: -o-linear-gradient(top, white, #e6e6e6);
+  background-image: linear-gradient(to bottom, white, #e6e6e6);
+  background-repeat: repeat-x;
+  border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #e6e6e6;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  border: 1px solid #bbbbbb;
+  *border: 0;
+  border-bottom-color: #a2a2a2;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  *margin-left: .3em;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); }
+  .logout button {
+    margin-left: 0; }
+
+button:hover,
+button:active,
+button.active,
+button.disabled,
+button[disabled] {
+  color: #333333;
+  background-color: #e6e6e6;
+  *background-color: #d9d9d9; }
+
+button.active,
+button:active {
+  background-color: #e6e6e6;
+  background-color: #d9d9d9 \9;
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05); }
+
+div.login + div {
+  margin-left: 130px; }
+  div.login + div ul {
+    padding: 0; }
+    div.login + div ul li {
+      list-style: none; }
 
 body {
   background-color: #1e2835; }
@@ -515,6 +635,21 @@ body {
     #footer a:hover {
       color: #56bef2;
       text-decoration: none; }
+
+#system-message {
+  margin: 0; }
+  #system-message dt, #system-message dd {
+    margin: 0; }
+  #system-message dt {
+    font-size: 20px;
+    font-family: Copperplate Gothic Bold, Helvetica, Arial, sans-serif;
+    color: #56bef2;
+    text-transform: uppercase; }
+  #system-message ul {
+    padding: 0;
+    margin-bottom: 0; }
+    #system-message ul li {
+      list-style: none; }
 
 .hmenu {
   font-family: Copperplate Gothic Light;
@@ -582,9 +717,10 @@ body {
     border: 1px solid #ffffff;
     border: 1px solid rgba(255, 255, 255, 0.42);
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.6);
-    border-top: 0; }
+    border-top: 0;
+    min-width: 200px;
+    max-width: 300px; }
     .primary-menu ul ul li {
-      line-height: 32px;
       border-top: 1px solid #17212f; }
       .primary-menu ul ul li:hover {
         background-color: #56bef2;
@@ -600,22 +736,22 @@ body {
         background-image: -ms-linear-gradient(top, #56bef2 0%, #3386b6 100%);
         /* IE10+ */
         background-image: linear-gradient(to bottom, #56bef2 0%, #3386b6 100%);
-        /* W3C */
-        line-height: 31px; }
+        /* W3C */ }
         .primary-menu ul ul li:hover a {
-          border-bottom: 1px solid #1c4b65; }
+          border-bottom: 1px solid #1c4b65;
+          padding-bottom: 8px; }
       .primary-menu ul ul li:first-child {
         border-top: 0; }
       .primary-menu ul ul li.last {
         border-bottom-right-radius: 3px;
         border-bottom-left-radius: 3px; }
-        .primary-menu ul ul li.last:hover {
-          line-height: 32px; }
         .primary-menu ul ul li.last:hover a {
-          border-bottom: 0; }
+          border-bottom: 0;
+          padding-bottom: 9px; }
     .primary-menu ul ul a {
       display: block;
-      padding: 0 4px; }
+      padding: 9px 4px;
+      white-space: normal; }
       .primary-menu ul ul a:hover {
         color: #ffffff; }
 
