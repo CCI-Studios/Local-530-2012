@@ -26,7 +26,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 .item-page h1:first-child,
 #phocagallery h1,
-h1 span.subheading-category {
+h1 span.subheading-category,
+.login h1:first-child,
+.profile h1:first-child,
+.logout h1:first-child,
+.reset h1:first-child,
+.remind h1:first-child,
+.reset-complete h1:first-child,
+.reset-confirm h1:first-child {
 	@include divider;
 	padding-bottom: .76em;
 	margin-bottom: 15px;
