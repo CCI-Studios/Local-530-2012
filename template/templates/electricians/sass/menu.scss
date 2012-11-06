@@ -93,9 +93,10 @@
 		z-index: 1;
 		@include border;
 		border-top: 0;
+		min-width: 200px;
+		max-width: 300px;
 
 		li {
-			line-height: 32px;
 			border-top: 1px solid #17212f;
 
 			&:hover {
@@ -106,10 +107,10 @@
 				background-image: -o-linear-gradient(top, #56bef2 0%,#3386b6 100%); /* Opera 11.10+ */
 				background-image: -ms-linear-gradient(top, #56bef2 0%,#3386b6 100%); /* IE10+ */
 				background-image: linear-gradient(to bottom, #56bef2 0%,#3386b6 100%); /* W3C */
-				line-height: 31px;
 
 				a {
 					border-bottom: 1px solid #1c4b65;
+					padding-bottom: 8px;
 				}
 			}
 
@@ -121,19 +122,17 @@
 				border-bottom-right-radius: 3px;
 				border-bottom-left-radius: 3px;
 
-				&:hover {
-					line-height: 32px;
-				}
-
 				&:hover a {
 					border-bottom: 0;
+					padding-bottom: 9px;
 				}
 			}
 		}
 
 		a {
 			display: block;
-			padding: 0 4px;
+			padding: 9px 4px;
+			white-space: normal;
 			&:hover {
 				color: #ffffff;
 			}
