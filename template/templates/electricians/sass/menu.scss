@@ -65,6 +65,10 @@
 	 	> span {
 			color: white;
 			line-height: 1em;
+
+			.ie7 & {
+				line-height: 1.3em;
+			}
 			
 			&:hover {
 				color: $blue;
