@@ -37,6 +37,10 @@
 	&:nth-child(4n+1) {
 		clear: both;
 	}
+
+	&:hover a {
+		color: $blue;
+	}
 }
 
 #phocagallery {
