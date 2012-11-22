@@ -431,11 +431,11 @@ h6 {
 a, a:active, a:visited, .primary-menu span {
   color: #9dd9f7;
   text-decoration: none;
-  -webkit-transition: color 0.3s ease-in;
-  -moz-transition: color 0.3s ease-in;
-  -o-transition: color 0.3s ease-in;
-  -ms-transition: color 0.3s ease-in;
-  transition: color 0.3s ease-in; }
+  -webkit-transition: color 0.2s ease-in;
+  -moz-transition: color 0.2s ease-in;
+  -o-transition: color 0.2s ease-in;
+  -ms-transition: color 0.2s ease-in;
+  transition: color 0.2s ease-in; }
 
 a:hover {
   color: #56bef2;
@@ -632,7 +632,7 @@ body {
   text-align: center;
   color: #979797;
   padding: 25px 0;
-  background: #191919 url("../images/bg_footer-repeat.png") top center repeat-x;
+  background: #1e2835 url("../images/bg_footer-repeat.png") top center repeat-x;
   min-height: 140px; }
   #footer a {
     color: #979797; }
@@ -816,6 +816,8 @@ body {
   display: inline-block;
   *display: inline;
   *zoom: 1; }
+  .read-more a:hover {
+    text-decoration: none; }
 
 small a {
   color: #56bef2 !important; }
@@ -879,6 +881,8 @@ div.pagination {
     display: none; }
   .gallery-block:nth-child(4n+1) {
     clear: both; }
+  .gallery-block:hover a {
+    color: #56bef2; }
 
 #phocagallery .pg-cats-cv,
 #phocagallery form,
