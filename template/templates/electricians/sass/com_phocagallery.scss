@@ -13,6 +13,10 @@
 
 	> div > div ~ div {
 		margin: 3px 0 0;
+
+		.ie7 & {
+			min-height: 35px;
+		}
 	}
 
 	img {
@@ -54,4 +58,16 @@
 	+ div {
 		display: none;
 	}
+}
+
+.ie7 .phocagallery-box-file-second {
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.ie7 .phocagallery-box-file-third {
+	padding-top: 0;
+	left: 0;
+	top: 0;
 }
