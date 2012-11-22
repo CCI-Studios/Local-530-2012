@@ -1,4 +1,4 @@
 window.addEvent('domready', function(){
-	var elements = $$('.ie7 .gallery-block:nth-child(4n+1), .ie8 .gallery-block:nth-child(4n+1)');
-	elements.addClass('clear');	
+	var elements = $$('.ie7 .gallery-block:nth-child(4n+1)', '.ie8 .gallery-block:nth-child(4n+1)');
+	elements.addClass('clear');
 });
